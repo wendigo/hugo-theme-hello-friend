@@ -30,7 +30,7 @@
     {{ end }}
 
     <div class="post-content">
-      {{ .Content }}
+      {{ .Content | emojify }}
     </div>
     {{ if eq .Type $.Site.Params.contentTypeName }}
       {{ if or .NextInSection .PrevInSection }}
@@ -60,13 +60,13 @@
         </div>
       {{ end }}
     {{ end }}
-    
+
 
     {{ if not (eq .Params.Comments "false") }}
       {{ if or (eq .Type $.Site.Params.contentTypeName) (.Params.Comments) }}
         {{ partial "comments.html" . }}
       {{ end }}
     {{ end }}
-    
+
     </div>
 {{ end }}
