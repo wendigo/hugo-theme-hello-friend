@@ -42,6 +42,26 @@
     margin: 0;
     padding: 0;
 
+    &-social-icons {
+      font-family: 'Socicon' !important;
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+
+      &-icon {
+        cursor: pointer;
+
+        &:not(:first-of-type) {
+          margin-left: 0.8rem;
+        }
+      }
+    }
+
     &--desktop {
       @media (--phone) {
         display: none;

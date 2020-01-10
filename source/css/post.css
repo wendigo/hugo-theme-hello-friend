@@ -4,6 +4,7 @@
   text-align: left;
   padding: 20px;
   margin: 20px auto;
+  min-width: 660px;
 
   @media (--tablet) {
     max-width: 660px;
